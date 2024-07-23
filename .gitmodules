@@ -15,7 +15,7 @@
 	url = ../../NilFoundation/crypto3-containers.git
 [submodule "crypto3-hash"]
 	path = libs/hash
-	url = ../../NilFoundation/crypto3-hash.git
+	url = ../../GeniusVentures/crypto3-hash.git
 [submodule "crypto3-kdf"]
 	path = libs/kdf
 	url = ../../NilFoundation/crypto3-kdf.git
