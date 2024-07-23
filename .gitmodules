@@ -6,7 +6,7 @@
 	url = ../../NilFoundation/crypto3-algebra.git
 [submodule "crypto3-block"]
 	path = libs/block
-	url = ../../NilFoundation/crypto3-block.git
+	url = ../../GeniusVentures/crypto3-block.git
 [submodule "crypto3-codec"]
 	path = libs/codec
 	url = ../../NilFoundation/crypto3-codec.git
@@ -30,7 +30,7 @@
 	url = ../../NilFoundation/crypto3-modes.git
 [submodule "crypto3-multiprecision"]
 	path = libs/multiprecision
-	url = ../../NilFoundation/crypto3-multiprecision.git
+	url = ../../GeniusVentures/crypto3-multiprecision.git
 [submodule "crypto3-passhash"]
 	path = libs/passhash
 	url = ../../NilFoundation/crypto3-passhash.git
@@ -60,7 +60,7 @@
     url = ../../NilFoundation/crypto3-zk.git
 [submodule "marshalling"]
 	path = libs/marshalling/core
-	url = ../../NilFoundation/marshalling.git
+	url = ../../GeniusVentures/marshalling.git
 [submodule "crypto3-zk-marshalling"]
 	path = libs/marshalling/zk
     url = ../../NilFoundation/crypto3-zk-marshalling.git
