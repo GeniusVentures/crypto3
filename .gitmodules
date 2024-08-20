@@ -39,7 +39,7 @@
 	url = ../../NilFoundation/crypto3-pbkdf.git
 [submodule "crypto3-pkmodes"]
 	path = libs/threshold
-	url = ../../NilFoundation/crypto3-pkmodes.git
+	url = ../../GeniusVentures/crypto3-threshold.git
 [submodule "crypto3-pkpad"]
 	path = libs/pkpad
 	url = ../../NilFoundation/crypto3-pkpad.git
