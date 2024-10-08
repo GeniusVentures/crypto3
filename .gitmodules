@@ -30,13 +30,13 @@
 	url = ../../NilFoundation/crypto3-modes.git
 [submodule "crypto3-multiprecision"]
 	path = libs/multiprecision
-	url = ../../GeniusVentures/crypto3-multiprecision.git
+	url = ../crypto3-multiprecision
 [submodule "crypto3-passhash"]
 	path = libs/passhash
-	url = ../../NilFoundation/crypto3-passhash.git
+	url = ../crypto3-passhash
 [submodule "crypto3-pbkdf"]
 	path = libs/pbkdf
-	url = ../../NilFoundation/crypto3-pbkdf.git
+	url = ../crypto3-pbkdf
 [submodule "crypto3-pkmodes"]
 	path = libs/threshold
 	url = ../../GeniusVentures/crypto3-threshold.git
@@ -54,7 +54,7 @@
 	url = ../../NilFoundation/crypto3-stream.git
 [submodule "crypto3-vdf"]
 	path = libs/vdf
-	url = ../../NilFoundation/crypto3-vdf.git
+	url = ../crypto3-vdf
 [submodule "crypto3-zk"]
 	path = libs/zk
     url = ../../NilFoundation/crypto3-zk.git
