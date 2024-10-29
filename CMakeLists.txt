@@ -8,6 +8,8 @@
 
 cmake_minimum_required(VERSION 3.2)
 
+project(crypto3)
+
 cmake_policy(SET CMP0042 NEW)
 cmake_policy(SET CMP0028 NEW)
 cmake_policy(SET CMP0057 NEW)
