@@ -51,7 +51,7 @@
 	url = ../../NilFoundation/crypto3-random.git
 [submodule "crypto3-stream"]
 	path = libs/stream
-	url = ../../NilFoundation/crypto3-stream.git
+	url = ../../GeniusVentures/crypto3-stream.git
 [submodule "crypto3-vdf"]
 	path = libs/vdf
 	url = ../crypto3-vdf
