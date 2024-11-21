@@ -3,13 +3,13 @@
 	url = ../../BoostCMake/cmake_modules.git
 [submodule "crypto3-algebra"]
 	path = libs/algebra
-	url = ../../NilFoundation/crypto3-algebra.git
+	url = ../../GeniusVentures/crypto3-algebra.git
 [submodule "crypto3-block"]
 	path = libs/block
 	url = ../../GeniusVentures/crypto3-block.git
 [submodule "crypto3-codec"]
 	path = libs/codec
-	url = ../../NilFoundation/crypto3-codec.git
+	url = ../../GeniusVentures/crypto3-codec.git
 [submodule "crypto3-containers"]
 	path = libs/containers
 	url = ../../NilFoundation/crypto3-containers.git
@@ -18,16 +18,16 @@
 	url = ../../GeniusVentures/crypto3-hash.git
 [submodule "crypto3-kdf"]
 	path = libs/kdf
-	url = ../../NilFoundation/crypto3-kdf.git
+	url = ../../GeniusVentures/crypto3-kdf.git
 [submodule "crypto3-mac"]
 	path = libs/mac
-	url = ../../NilFoundation/crypto3-mac.git
+	url = ../../GeniusVentures/crypto3-mac.git
 [submodule "crypto3-math"]
 	path = libs/math
 	url = ../../GeniusVentures/crypto3-math.git
 [submodule "crypto3-modes"]
 	path = libs/modes
-	url = ../../NilFoundation/crypto3-modes.git
+	url = ../../GeniusVentures/crypto3-modes.git
 [submodule "crypto3-multiprecision"]
 	path = libs/multiprecision
 	url = ../crypto3-multiprecision
@@ -42,10 +42,10 @@
 	url = ../../GeniusVentures/crypto3-threshold.git
 [submodule "crypto3-pkpad"]
 	path = libs/pkpad
-	url = ../../NilFoundation/crypto3-pkpad.git
+	url = ../../GeniusVentures/crypto3-pkpad.git
 [submodule "crypto3-pubkey"]
 	path = libs/pubkey
-	url = ../../NilFoundation/crypto3-pubkey.git
+	url = ../../GeniusVentures/crypto3-pubkey.git
 [submodule "crypto3-random"]
 	path = libs/random
 	url = ../../NilFoundation/crypto3-random.git
