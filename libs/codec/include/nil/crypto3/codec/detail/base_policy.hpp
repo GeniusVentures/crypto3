@@ -33,12 +33,12 @@
 #include <boost/container/small_vector.hpp>
 
 #include <boost/multiprecision/cpp_int.hpp>
-#include <nil/crypto3/multiprecision/integer.hpp>
+//#include <nil/crypto3/multiprecision/integer.hpp>
 
 #include <nil/crypto3/detail/inline_variable.hpp>
 
-using namespace nil::crypto3::multiprecision;
-
+//using namespace boost::multiprecision;
+using cpp_int = boost::multiprecision::cpp_int;
 namespace nil {
     namespace crypto3 {
         namespace codec {
@@ -363,30 +363,29 @@ namespace nil {
                         return output;
                     }
 
-                    static inline decoded_block_type decode_block(const encoded_block_type &encoded) {
-                        decoded_block_type out = {0};
-                        encoded_block_type output_buffer = {0};
+                    static inline decoded_block_type decode_block(const encoded_block_type& encoded) {
+                        decoded_block_type out = { 0 };
+                        encoded_block_type output_buffer = { 0 };
 
-                        typename decoded_block_type::iterator oit = std::begin(output_buffer);
+                        typename encoded_block_type::iterator oit = std::begin(output_buffer);
 
                         for (typename encoded_block_type::const_iterator it = std::begin(encoded);
-                             it != std::end(encoded);
-                             ++it) {
+                            it != std::end(encoded);
+                            ++it) {
                             const uint8_t bin = inverted_constants()[*it];
 
                             if (bin <= 0x3f) {
                                 *oit++ = bin;
-                            } else if (!(bin == 0x81 || bin == 0x80)) {
+                            }
+                            else if (!(bin == 0x81 || bin == 0x80)) {
                                 BOOST_THROW_EXCEPTION(non_base_input<64>());
                             }
 
                             /*
                              * If we're at the end of the input, pad with 0s and truncate
                              */
-                            if (std::distance(it, encoded.end()) == 1 && std::distance(output_buffer.begin(), oit)) {
-                                for (auto itr = oit;
-                                     std::distance(output_buffer.begin(), itr) < decoded_block_bits / CHAR_BIT;
-                                     ++itr) {
+                            if (std::distance(it, encoded.end()) == 1 && std::distance(output_buffer.begin(), oit) > 0) {
+                                for (auto itr = oit; itr != output_buffer.end(); ++itr) {
                                     *itr = 0x00;
                                 }
 
@@ -404,6 +403,7 @@ namespace nil {
 
                         return out;
                     }
+
                 };
 
                 template<std::size_t Version>
